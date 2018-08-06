@@ -14,15 +14,19 @@ class Workouts extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Im going to be a list of workouts</h1>
-        <ul className="list-group">
-          {this.props.workouts.map(d => (
-            <li key={d.id} className="list-group-item">
-              {d.id},{d.name}
-            </li>
-          ))}
-        </ul>
+      <div className="container">
+        <div className="row">
+          <h1>Im going to be a list of workouts</h1>
+        </div>
+        <div className="row">
+          <ul className="list-group">
+            {this.props.workouts.map(d => (
+              <li key={d.id} className="list-group-item">
+                {d.id},{d.name}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }

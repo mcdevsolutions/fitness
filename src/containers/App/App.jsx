@@ -5,6 +5,7 @@ import Footer from '../../components/footer/footer';
 import Home from '../../containers/Home/Home';
 import Workouts from '../../containers/Workouts/Workouts';
 import Nav from '../../components/navigation/mainNavigation';
+import Users from '../../containers/Users/Users';
 import './App.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +18,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/workouts" component={Workouts} />
+          <Route path="/users" component={Users} />
         </Switch>
         <Footer />
       </div>

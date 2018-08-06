@@ -26,6 +26,11 @@ export default class mainNavigation extends Component {
                 Workouts
               </Link>
             </li>
+            <li className="nav-item active">
+              <Link to="/users" className="nav-link">
+                Users
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
